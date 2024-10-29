@@ -1,27 +1,4 @@
-# from flask import Flask, request
-# from twilio.twiml.messaging_response import MessagingResponse
-# import pandas as pd
-# app = Flask(__name__)
 
-# @app.route('/whatsapp', methods=['POST'])
-# def whatsapp_reply():
-#     # Get the message from the user
-#     incoming_msg = request.values.get('Body', '').lower()
-
-#     # Create a Twilio response object
-#     response = MessagingResponse()
-#     message = response.message()
-
-#     # Respond based on the content of the incoming message
-#     if 'sup' in incoming_msg:
-#         message.body('Hi!fdfdf    i wont and i  can I help you today?')
-#     else:
-#         message.body('I am a chatbot. Please say "hello" to start a conversation.')
-
-#     return str(response)
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
 
 
 from flask import Flask, request
