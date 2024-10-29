@@ -1,7 +1,7 @@
 import pandas as pd
 
-# Load the Excel file
-file_path = 'C:\Desktop\menu_bot\IIITB-Menu (1).xlsx'  # Replace with the path to your .xlsx file
+# Load the Excel file with double backslashes
+file_path = "C:\\Desktop\\total_coding\\menu_bot\\menu.xlsx"
 df = pd.read_excel(file_path)
 
 # Map days to their respective column indices (0-indexed)
