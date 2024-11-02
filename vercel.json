@@ -1,19 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "app.py",
-      "use": "@vercel/python",
-      "config": { "pythonVersion": "3.10" }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app.py"
-    }
-  ],
-  "build": {
-    "command": "python3 -m pip install --upgrade pip && pip install -r requirements.txt"
-  }
+  "builds": [{ "src": "api/main.py", "use": "@vercel/python" }],
+  "routes": [{ "src": "/(.*)", "dest": "api/main.py" }]
 }
